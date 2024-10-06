@@ -4,7 +4,7 @@ def get_model(model_path: str):
     return model
 
 def image_train(model_path: str, dataset, epochs: int, image_size: int):
-    model = YOLO(model_path)
+    model = get_model(model_path=model_path)
     results = model.train(
         dataset=dataset,
         epochs = epochs,
