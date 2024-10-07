@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 import json
 
-model = YOLO('best.pt')
+model = YOLO('best_covid19.pt')
 
 def image_classification(image):
 
